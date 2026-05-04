@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-pepper-red: #7B1113;
+  --color-pepper-burgundy: #4A0E0E;
+  --color-pepper-black: #0A0A0A;
+}
+
+@layer base {
+  body {
+    @apply bg-pepper-black text-white;
+  }
+}
+
+.pepper-gradient {
+  background: linear-gradient(135deg, var(--color-pepper-red) 0%, var(--color-pepper-burgundy) 100%);
+}
+
+.glass-morphism {
+  @apply backdrop-blur-md bg-white/5 border border-white/10;
+}
